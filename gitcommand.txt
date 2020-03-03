@@ -188,6 +188,66 @@ To https://github.com/jainyash1819/yashreactproject.git
    a9e9634..b935a6d  master -> master
 Branch 'master' set up to track remote branch 'master' from 'origin'.
 
+D:\YASH\TYBCA-GIT>git add Git Command.txt
+fatal: pathspec 'Git' did not match any files
+
+D:\YASH\TYBCA-GIT>git add gitcommand.txt
+
+D:\YASH\TYBCA-GIT>git commit -m "Initial Commit"
+[master bbbc905] Initial Commit
+ 1 file changed, 189 insertions(+)
+ create mode 100644 gitcommand.txt
+
+D:\YASH\TYBCA-GIT>git push -u origin master
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 6 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 1.70 KiB | 1.71 MiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/jainyash1819/yashreactproject.git
+   b935a6d..bbbc905  master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+D:\YASH\TYBCA-GIT>git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   gitcommand.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        GET/
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+D:\YASH\TYBCA-GIT>git add gitcommand.txt
+
+D:\YASH\TYBCA-GIT>git commit -m "Updated git command"
+[master 48b9816] Updated git command
+ 1 file changed, 28 insertions(+), 1 deletion(-)
+
+D:\YASH\TYBCA-GIT>git push -u origin master
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 6 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 637 bytes | 637.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/jainyash1819/yashreactproject.git
+   bbbc905..48b9816  master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+D:\YASH\TYBCA-GIT>git pull origin master
+From https://github.com/jainyash1819/yashreactproject
+ * branch            master     -> FETCH_HEAD
+Already up to date.
+
+
 
 --------------------------------------------------------------------------------------------------------------------------
 Microsoft Windows [Version 10.0.18362.356]
