@@ -1,0 +1,189 @@
+Microsoft Windows [Version 10.0.18362.356]
+(c) 2019 Microsoft Corporation. All rights reserved.
+
+D:\YASH\TYBCA-GIT>git init
+Initialized empty Git repository in D:/YASH/TYBCA-GIT/.git/
+
+D:\YASH\TYBCA-GIT>git status
+On branch master
+
+No commits yet
+
+nothing to commit (create/copy files and use "git add" to track)
+
+D:\YASH\TYBCA-GIT>git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        index.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+D:\YASH\TYBCA-GIT>git add index.html
+
+D:\YASH\TYBCA-GIT>git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   index.html
+
+
+D:\YASH\TYBCA-GIT>git commit -m "Initial Commit"
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'Machine028@Machine28.(none)')
+
+D:\YASH\TYBCA-GIT>git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   index.html
+
+
+D:\YASH\TYBCA-GIT>git config --global user.email "yashraj1899@gmail.com"
+
+D:\YASH\TYBCA-GIT>git config --global user.name "Yash Bamb"
+
+D:\YASH\TYBCA-GIT>git commit -m "Initial Commit"
+[master (root-commit) 42f2ac8] Initial Commit
+ 1 file changed, 5 insertions(+)
+ create mode 100644 index.html
+
+D:\YASH\TYBCA-GIT>git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   index.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+D:\YASH\TYBCA-GIT>git add index.html
+
+D:\YASH\TYBCA-GIT>git diff
+
+D:\YASH\TYBCA-GIT>git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   index.html
+
+
+D:\YASH\TYBCA-GIT>git diff --staged
+diff --git a/index.html b/index.html
+index c4383d0..180e502 100644
+--- a/index.html
++++ b/index.html
+@@ -1,5 +1,7 @@
+ <html>
+ <body>
+ <h1>Welcome to git Code</h1>
++
++Hello How are You?
+ </body>
+ </html>
+\ No newline at end of file
+
+D:\YASH\TYBCA-GIT>git commit -m "Changes in index.html"
+[master a9e9634] Changes in index.html
+ 1 file changed, 2 insertions(+)
+
+D:\YASH\TYBCA-GIT>git log
+commit a9e9634046d0f0fd67a5e3a830f0b7d306aae55f (HEAD -> master)
+Author: Yash Bamb <yashraj1899@gmail.com>
+Date:   Tue Mar 3 16:22:48 2020 +0530
+
+    Changes in index.html
+
+commit 42f2ac8a674c76a94311304e2f22f13cb8980561
+Author: Yash Bamb <yashraj1899@gmail.com>
+Date:   Tue Mar 3 16:14:16 2020 +0530
+
+    Initial Commit
+
+D:\YASH\TYBCA-GIT>git config --global user.email "jainyash1819@gmail.com"
+
+D:\YASH\TYBCA-GIT>git config --global user.name "jainyash"
+
+D:\YASH\TYBCA-GIT>git status
+On branch master
+nothing to commit, working tree clean
+
+D:\YASH\TYBCA-GIT>git commit -m "Initial Commit"
+On branch master
+nothing to commit, working tree clean
+
+D:\YASH\TYBCA-GIT>git remote add origin https://github.com/jainyash1819/yashreactproject.git
+
+D:\YASH\TYBCA-GIT>git push -u origin master
+Enumerating objects: 6, done.
+Counting objects: 100% (6/6), done.
+Delta compression using up to 6 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (6/6), 555 bytes | 555.00 KiB/s, done.
+Total 6 (delta 0), reused 0 (delta 0)
+To https://github.com/jainyash1819/yashreactproject.git
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+D:\YASH\TYBCA-GIT>git add new.html
+
+D:\YASH\TYBCA-GIT>git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   new.html
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        file.html
+
+
+D:\YASH\TYBCA-GIT>git add file.html
+
+D:\YASH\TYBCA-GIT>git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   file.html
+        new file:   new.html
+
+
+D:\YASH\TYBCA-GIT>git commit -m "Initial Commit"
+[master b935a6d] Initial Commit
+ 2 files changed, 12 insertions(+)
+ create mode 100644 file.html
+ create mode 100644 new.html
+
+D:\YASH\TYBCA-GIT>git push -u origin master
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 6 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 441 bytes | 441.00 KiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0)
+To https://github.com/jainyash1819/yashreactproject.git
+   a9e9634..b935a6d  master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
