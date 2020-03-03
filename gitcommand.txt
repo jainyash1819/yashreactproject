@@ -187,3 +187,30 @@ Total 4 (delta 0), reused 0 (delta 0)
 To https://github.com/jainyash1819/yashreactproject.git
    a9e9634..b935a6d  master -> master
 Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+
+--------------------------------------------------------------------------------------------------------------------------
+Microsoft Windows [Version 10.0.18362.356]
+(c) 2019 Microsoft Corporation. All rights reserved.
+
+D:\YASH\TYBCA-GIT\GET>git init
+Initialized empty Git repository in D:/YASH/TYBCA-GIT/GET/.git/
+
+D:\YASH\TYBCA-GIT\GET>git remote add origin https://github.com/jainyash1819/yashreactproject.git
+
+D:\YASH\TYBCA-GIT\GET>git pull orign
+fatal: 'orign' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+D:\YASH\TYBCA-GIT\GET>git clone https://github.com/jainyash1819/yashreactproject.git
+Cloning into 'yashreactproject'...
+remote: Enumerating objects: 13, done.
+remote: Counting objects: 100% (13/13), done.
+remote: Compressing objects: 100% (11/11), done.
+remote: Total 13 (delta 1), reused 12 (delta 0), pack-reused 0
+Unpacking objects: 100% (13/13), 2.51 KiB | 2.00 KiB/s, done.
+
+D:\YASH\TYBCA-GIT\GET>
